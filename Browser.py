@@ -77,9 +77,12 @@ class Browser:
         notFollower=list(set(self.following)-set(self.followers))
         print("Seni takip etmeyen takip ettiklerin")
         i=1
+        f=open('notfollowers.txt','w')
         for item in notFollower:
             print(item)
+            f.write(item+"\n")
             i=i+1
+        f.close()
     def notFollowing(self):
         notFollowing=list(set(self.followers)-set(self.following))
         print("Senin takip etmediğin takipçilerin")

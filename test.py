@@ -2,8 +2,8 @@
 class Test:
 
     def __init__(self):
-        self.a = ["özgür", "karaçam"]
-        self.b = ["özgür","wwww"]
+        self.a = ["a", "b"]
+        self.b = ["a","c"]
         print(self.Diff(self.a,self.b))
 
     def Diff(self,li1, li2):
@@ -11,8 +11,13 @@ class Test:
         return li_dif
 
 if __name__ == '__main__':
-    f=open('notfollowers.txt')
-    w=0
-    for i in f:
-        w=w+1
-    print(w)
+    # f=open('notfollowers.txt')
+    # w=0
+    # for i in f:
+    #     w=w+1
+    # print(w)
+    testt=["özgür","karaçam","www"]
+    f=open('notfollowers.txt',"w")
+    for i in testt:
+        f.write(i+"\n")
+    f.close()

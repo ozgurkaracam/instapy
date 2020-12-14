@@ -2,8 +2,10 @@ from Browser import Browser
 import time
 import userDetails
 import tkinter as tk
+import fileoptest as fo
 
 instapy=Browser(userDetails.username,userDetails.password)
+fo.delInstagram(userDetails.username,userDetails.password)
 # time.sleep(10)
 
 # root = tk.Tk()

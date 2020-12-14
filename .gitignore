@@ -5,3 +5,5 @@ ghostdriver.log
 phantomjs-2.1.1-windows
 venv
 .idea
+__pycache__
+notfollowers.txt
