@@ -4,3 +4,4 @@ phantomjs.exe
 ghostdriver.log
 phantomjs-2.1.1-windows
 venv
+.idea
